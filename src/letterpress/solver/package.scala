@@ -10,8 +10,6 @@ package object solver {
     val tiles = board.tiles.toList
     val words = utils.filterWords(dict, tiles).toList
     val plays = play(words, tiles, board, color)
-    println(plays.head)
-    println(plays.tail)
     plays.head
   }
   
